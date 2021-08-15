@@ -1,22 +1,20 @@
 import React from 'react';
 import './BusinessList.css';
 import Business from '../Business/Business';
-import { array } from 'prop-types';
 
 const list = () => {
     const array = [];
-    for (let i = 0; i < 10; i++) {
-        array.push(<Business />);
+    for (let i = 0; i < 4; i++) {
+        array.push(<Business key={`${i}`}/>);
     }
-
     return array;
 }
 
 class BusinessList extends React.Component {
     render (){
         return (
-            <div class="BusinessList">
-                {list}
+            <div className="BusinessList">
+                {list()}
             </div>
         );
     }
