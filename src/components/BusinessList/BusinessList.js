@@ -4,7 +4,7 @@ import Business from '../Business/Business';
 
 const list = () => {
     const array = [];
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 100; i++) {
         array.push(<Business key={`${i}`}/>);
     }
     return array;
