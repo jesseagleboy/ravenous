@@ -34,9 +34,21 @@ const marginOtto = {
     reviewCount: 90
   }
 
+  const marx = {
+    imageSrc: 'https://digitalmarketing.blob.core.windows.net/6098/images/items/image297511.jpg',
+    name: "Marx's Bagels",
+    address: '9701 Kenwood Rd',
+    city: 'Blue Ash',
+    state: 'OH',
+    zipCode: '45242',
+    category: 'Kosher Dairy',
+    rating: 4.5,
+    reviewCount: 90
+  }
+
 
   
   
-  const business = [marginOtto, mizrachi, noir];
+  const business = [marginOtto, mizrachi, noir, marx];
 
   export default business;

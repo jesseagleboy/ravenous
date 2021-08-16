@@ -6,12 +6,16 @@ import Business from '../Business/Business';
 
 class BusinessList extends React.Component {
     list() {
-        const array = [];
-        for (let i = 0; i < 4; i++) {
-            array.push(<Business key={i} business={this.props.business[i%this.props.business.length]} />);
-         }
+       const array = [];
+       this.props.business.filter((company, index) => {
+           if (company.category === this.props.valueType) {
+               array.push(<Business key={index} business={company}/>)
+           }
 
-        return array;
+           return array;
+       });
+
+       return array;
     }
     
     
