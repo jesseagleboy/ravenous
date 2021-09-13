@@ -4,6 +4,7 @@
   justify-content: space-between;
   width: 16.66rem;
   margin: 0 .5rem 2.3rem .5rem;
+  transition: 0.7s;
 }
 
 .Business .image-container {
@@ -49,4 +50,9 @@
 .Business-reviews .rating {
   font-size: .88rem;
   line-height: 1rem;
+}
+
+.Business:hover {
+  padding: 0 .5rem 2.5rem .7rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

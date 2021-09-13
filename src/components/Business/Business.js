@@ -4,11 +4,11 @@ import './Business.css';
 
 
 class Business extends React.Component {
-    render () {
-        return (
+    render () { 
+      return (
     <div className="Business">
      <div className="image-container">
-        <img src={this.props.business.imageSrc} alt={this.props.business.name}/>
+        <img src={this.props.business.imgSrc} alt={this.props.business.name}/>
     </div>
     <h2>{this.props.business.name}</h2>
     <div className="Business-information">
